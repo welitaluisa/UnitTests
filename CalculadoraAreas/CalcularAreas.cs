@@ -19,7 +19,8 @@ public static double calcularAreaDoCubo(double lado)
     }
 
     // Fórmula simples que calcula a área de um cubo => A = 6 * (lado²)
-    double areaDoCubo = 6 * (lado * lado);
+    double areaDoCubo = 6 * Math.Pow(lado, 2);
+
     return areaDoCubo;
 }
 
@@ -61,11 +62,16 @@ public static double calcularAreaDoParalelograma(double baseParalelogramo, doubl
         }
     }
 
-    public  static void Main()
+public static void Main()
     {
-        // Metódo que chama as funções que calcula a área das figuras geométricas: Cubo, Paralelograma e Triângulo
-        Console.WriteLine("A Área do Cubo com lado igual a 4 é: " + calcularAreaDoCubo(4));
-        Console.WriteLine("A Área do Pararelograma com base igual a 4 e a altura igual a 2 é : " + calcularAreaDoParalelograma(4,2));
-        Console.WriteLine("A Área do Triângulo com base iqual a 6 e a altura igual a 8 é: " + calcularAreaDoTriangulo(6,8));
+        double ladoCubo = 4;
+        double baseParalelograma = 4;
+        double alturaParalelograma = 2;
+        double baseTriangulo = 6;
+        double alturaTriangulo = 8;
+
+        Console.WriteLine($"A Área do Cubo com lado igual a {ladoCubo} é: {calcularAreaDoCubo(ladoCubo)} m²");
+        Console.WriteLine($"A Área do Pararelograma com base igual a {baseParalelograma} e a altura igual a {alturaParalelograma} é: {calcularAreaDoParalelograma(baseParalelograma, alturaParalelograma)} m²");
+        Console.WriteLine($"A Área do Triângulo com base igual a {baseTriangulo} e a altura igual a {alturaTriangulo} é: {calcularAreaDoTriangulo(baseTriangulo, alturaTriangulo)} m²");
     }
 }
