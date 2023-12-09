@@ -20,7 +20,6 @@ public static double calcularAreaDoCubo(double lado)
 
     // Fórmula simples que calcula a área de um cubo => A = 6 * (lado²)
     double areaDoCubo = 6 * Math.Pow(lado, 2);
-
     return areaDoCubo;
 }
 
@@ -44,21 +43,21 @@ public static double calcularAreaDoParalelograma(double baseParalelogramo, doubl
         }
 
     // Fórmula simples que calcula a área de um paralelograma => base * altura
-    double areaDoParalelogramo = baseParalelogramo * alturaParalelogramo;
-    return areaDoParalelogramo;
+        double areaDoParalelogramo = baseParalelogramo * alturaParalelogramo;
+        return areaDoParalelogramo;
 }
     public static double calcularAreaDoTriangulo(double baseTriangulo, double alturaTriangulo)
     {
         {
         // Verifica se a base ou a altura são negativas
         if (baseTriangulo < 0 || alturaTriangulo < 0)
-            {
+        {
             Console.WriteLine("Erro: A base e altura do triangulo devem ser maior que zero.");
             return 0; //indicar um valor inválido
-            }
+        }
 
         // A fórmula para calcular a área de um triângulo é (base * altura) / 2
-        return (baseTriangulo * alturaTriangulo) / 2.0;
+            return (baseTriangulo * alturaTriangulo) / 2.0;
         }
     }
 
