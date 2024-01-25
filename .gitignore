@@ -1,0 +1,12 @@
+*.bin
+*.obj
+*.pdb
+*.dll.mdb
+*.exe.mdb
+*.user
+*.suo
+*.cache
+*.log
+*.vspscc
+*.log
+
