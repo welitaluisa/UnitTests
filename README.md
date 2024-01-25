@@ -27,8 +27,9 @@ O projeto inclui implementações para o cálculo de áreas do:
 
 2. **Clonar o Repositório:**
    ```bash
-   git clone https://github.com/seu-usuario/calculadora-areas.git
-   cd calculadora-areas
+   git clone https://github.com/welitaluisa/UnitTests.git
+   
+
 
 ## Comando para rodar os testes
 - dotnet test -v n 
